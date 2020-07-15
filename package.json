@@ -7,7 +7,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rimraf dist && cross-env NODE_ENV=production rollup -c",
+    "build": "npm run lint:fix && rimraf dist && cross-env NODE_ENV=production rollup -c",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "npm run prettier && eslint . --ext .ts,.tsx --fix",
+    "prettier": "prettier --write './src/**/*.{ts,tsx}'",
     "start": "serve dist"
   },
   "main": "dist/index.js",
@@ -34,9 +37,18 @@
     "@rollup/plugin-replace": "^2.3.3",
     "@types/lodash": "^4.14.157",
     "@types/node": "^13.7.7",
+    "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.43",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
     "babel-plugin-react-require": "^3.1.3",
     "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.21.0",
@@ -45,9 +57,10 @@
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-terser": "^6.1.0",
     "serve": "^11.3.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.6"
   },
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.13.1"
   }
 }

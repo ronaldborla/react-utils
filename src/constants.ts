@@ -1,4 +1,4 @@
 /**
  * Suspend window scrolling sclass
  */
-export const SCROLL_SUSPENDED_CLASS: string = 'scroll-suspended'
+export const SCROLL_SUSPENDED_CLASS = 'scroll-suspended';

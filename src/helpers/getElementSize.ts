@@ -1,4 +1,4 @@
-import Size from '../types/Size'
+import Size from '../types/Size';
 
 /**
  * Element height
@@ -7,8 +7,8 @@ export function getElementHeight(element: HTMLElement): number {
   return Math.max(
     element.clientHeight,
     element.scrollHeight,
-    element.offsetHeight
-  )
+    element.offsetHeight,
+  );
 }
 
 /**
@@ -18,8 +18,8 @@ export function getElementWidth(element: HTMLElement): number {
   return Math.max(
     element.clientHeight,
     element.scrollHeight,
-    element.offsetHeight
-  )
+    element.offsetHeight,
+  );
 }
 
 /**
@@ -29,5 +29,5 @@ export default function getElementSize(element: HTMLElement): Size {
   return {
     height: getElementWidth(element),
     width: getElementHeight(element),
-  }
+  };
 }

@@ -1,6 +1,6 @@
 /**
  * Check if url is absolute
  */
-export default function isAbsoluteUrl(url: string) {
-  return /^https?:\/\//i.test(url)
+export default function isAbsoluteUrl(url: string): boolean {
+  return /^https?:\/\//i.test(url);
 }

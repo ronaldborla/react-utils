@@ -1,4 +1,4 @@
-import trim from 'lodash/trim'
+import trim from 'lodash/trim';
 
 /**
  * Get class list
@@ -6,5 +6,5 @@ import trim from 'lodash/trim'
 export default function getClassList(element: HTMLElement): string[] {
   return element.className
     .split(' ')
-    .filter((className: string) => !!trim(className))
+    .filter((className: string) => !!trim(className));
 }

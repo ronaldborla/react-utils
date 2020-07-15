@@ -34,12 +34,12 @@ export default {
     dir: 'dist',
     format: 'es',
   },
-  external: [
-    'react'
-  ],
+  external: ['prop-types', 'react'],
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
+      'process.env.NODE_ENV': JSON.stringify(
+        isProd ? 'production' : 'development',
+      ),
     }),
     resolve({
       extensions,
@@ -61,15 +61,21 @@ export default {
         'react-require',
         '@babel/plugin-syntax-dynamic-import',
         '@babel/plugin-proposal-class-properties',
-        ['@babel/plugin-proposal-object-rest-spread', {
-          useBuiltIns: true,
-        }],
-        ['@babel/plugin-transform-runtime', {
-          corejs: 3,
-          helpers: true,
-          regenerator: true,
-          useESModules: false,
-        }],
+        [
+          '@babel/plugin-proposal-object-rest-spread',
+          {
+            useBuiltIns: true,
+          },
+        ],
+        [
+          '@babel/plugin-transform-runtime',
+          {
+            corejs: 3,
+            helpers: true,
+            regenerator: true,
+            useESModules: false,
+          },
+        ],
       ],
     }),
     html({
@@ -92,15 +98,17 @@ export default {
 `;
       },
     }),
-    (isProd && terser()),
-    (!isProd && serve({
-      host: 'localhost',
-      port: 3000,
-      open: true,
-      contentBase: ['dist'],
-    })),
-    (!isProd && livereload({
-      watch: 'dist',
-    })),
+    isProd && terser(),
+    !isProd &&
+      serve({
+        host: 'localhost',
+        port: 3000,
+        open: true,
+        contentBase: ['dist'],
+      }),
+    !isProd &&
+      livereload({
+        watch: 'dist',
+      }),
   ],
 };

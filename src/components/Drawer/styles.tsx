@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import { SCROLL_SUSPENDED_CLASS } from '../../constants'
+import styled from '@emotion/styled';
+import { SCROLL_SUSPENDED_CLASS } from '../../constants';
 
 export const drawerHtmlCss = `
   html {
@@ -14,7 +14,7 @@ export const drawerHtmlCss = `
       }
     }
   }
-`
+`;
 
 export const Wrapper = styled.div`
   transition-duration: 0.3s;
@@ -88,7 +88,7 @@ export const Wrapper = styled.div`
       transform: translateX(0%);
     }
   }
-`
+`;
 
 export const Backdrop = styled.div`
   transition: 0.3s opacity ease;
@@ -102,7 +102,7 @@ export const Backdrop = styled.div`
   &.drawer-is-open {
     opacity: 0.6;
   }
-`
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -110,4 +110,4 @@ export const Container = styled.div`
   flex-grow: 1;
   max-height: 100%;
   box-sizing: border-box;
-`
+`;

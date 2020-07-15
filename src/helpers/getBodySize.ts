@@ -1,5 +1,5 @@
-import { getElementHeight, getElementWidth } from './getElementSize'
-import Size from '../types/Size'
+import { getElementHeight, getElementWidth } from './getElementSize';
+import Size from '../types/Size';
 
 /**
  * Body height
@@ -8,8 +8,8 @@ export function getBodyHeight(): number {
   return Math.max(
     document.body.scrollHeight,
     document.body.offsetHeight,
-    getElementHeight(document.documentElement)
-  )
+    getElementHeight(document.documentElement),
+  );
 }
 
 /**
@@ -19,8 +19,8 @@ export function getBodyWidth(): number {
   return Math.max(
     document.body.scrollWidth,
     document.body.offsetWidth,
-    getElementWidth(document.documentElement)
-  )
+    getElementWidth(document.documentElement),
+  );
 }
 
 /**
@@ -30,5 +30,5 @@ export default function getBodySize(): Size {
   return {
     height: getBodyHeight(),
     width: getBodyWidth(),
-  }
+  };
 }
