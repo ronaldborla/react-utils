@@ -44,7 +44,7 @@ const defaultDrawerOptions: DrawerOptions = {
 };
 
 Drawer.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
   onClose: PropTypes.func,
   onCompleteClose: PropTypes.func,
   onCompleteOpen: PropTypes.func,
