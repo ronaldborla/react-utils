@@ -34,6 +34,9 @@ export default {
     dir: 'dist',
     format: 'es',
   },
+  external: [
+    'react'
+  ],
   plugins: [
     replace({
       'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
