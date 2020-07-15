@@ -7,14 +7,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "npm run lint:fix && rimraf dist && cross-env NODE_ENV=production rollup -c",
+    "empty": "rimraf lib",
+    "build": "npm run lint:fix && npm run empty && cross-env NODE_ENV=production rollup -c",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "npm run prettier && eslint . --ext .ts,.tsx --fix",
     "prettier": "prettier --write './src/**/*.{ts,tsx}'",
-    "start": "serve dist"
+    "start": "serve lib"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "index.js",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
