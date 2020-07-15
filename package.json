@@ -14,7 +14,7 @@
     "prettier": "prettier --write './src/**/*.{ts,tsx}'",
     "start": "serve lib"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
