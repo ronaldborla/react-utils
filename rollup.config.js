@@ -31,7 +31,7 @@ export default {
     useOnScroll: 'src/hooks/useOnScroll',
   },
   output: {
-    dir: 'dist/es',
+    dir: 'dist',
     format: 'es',
   },
   plugins: [
