@@ -1,7 +1,7 @@
 // Constants
 export { SCROLL_SUSPENDED_CLASS } from './constants';
 // Components
-export { default as Drawer } from './components/Drawer';
+export { default as Drawer, drawerHtmlCss } from './components/Drawer';
 // Helpers
 export {
   default as getBodySize,
