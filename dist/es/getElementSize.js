@@ -1,0 +1,1 @@
+function t(t){return Math.max(t.clientHeight,t.scrollHeight,t.offsetHeight)}function e(t){return Math.max(t.clientHeight,t.scrollHeight,t.offsetHeight)}export default function(i){return{height:e(i),width:t(i)}}export{t as getElementHeight,e as getElementWidth};
