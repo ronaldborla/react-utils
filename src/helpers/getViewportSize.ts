@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module helpers
+ */
+
 import Size from '../types/Size';
 
 /**

@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module hooks
+ */
+
 import useEventListener from './useEventListener';
 import { useCallback } from 'react';
 import getViewportSize from '../helpers/getViewportSize';

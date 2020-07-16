@@ -1,4 +1,9 @@
 /**
+ * @packageDocumentation
+ * @module types
+ */
+
+/**
  * Size interface
  */
 export default interface Size {

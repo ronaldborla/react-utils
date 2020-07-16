@@ -1,8 +1,15 @@
+/**
+ * @packageDocumentation
+ * @module helpers
+ */
+
 import { getElementHeight, getElementWidth } from './getElementSize';
 import Size from '../types/Size';
 
 /**
- * Body height
+ * Get the height of the HTML <body> element
+ * This is used to calculate the total vertical size of the body
+ * @returns {number} Height of body in integer
  */
 export function getBodyHeight(): number {
   return Math.max(
@@ -13,7 +20,9 @@ export function getBodyHeight(): number {
 }
 
 /**
- * Body width
+ * Get the width of the HTML <body> element
+ * This is used to calculate the total horizontal size of the body
+ * @returns {number} Width of body in integer
  */
 export function getBodyWidth(): number {
   return Math.max(

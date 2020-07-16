@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Drawer | react-utils</title>
+	<meta name="description" content="Documentation for react-utils">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">react-utils</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="drawer.html">Drawer</a>
+				</li>
+			</ul>
+			<h1>Module Drawer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/drawer.drawerprops.html" class="tsd-kind-icon">Drawer<wbr>Props</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="drawer.html#drawer-1" class="tsd-kind-icon">Drawer</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="drawer-1" class="tsd-anchor"></a>
+					<h3>Drawer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Drawer<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/drawer.drawerprops.html" class="tsd-signature-type">DrawerProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">HTMLAttributes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ronaldborla/react-utils/blob/2402045/src/components/Drawer/index.tsx#L265">components/Drawer/index.tsx:265</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<a href="#drawer-component" id="drawer-component" style="color: inherit; text-decoration: none;">
+										<h2>Drawer component</h2>
+									</a>
+								</div>
+								<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+									<h3>Usage</h3>
+								</a>
+								<p>Encloses any UI, component, or HTML block in a Drawer UI<br />
+									<br />
+									This component is normally paired with the <code>useState</code> React hook<br />
+								Define a boolean state that will identify the <code>open</code> status of the Drawer</p>
+								<pre><code><span class="hljs-keyword">const</span> [<span class="hljs-built_in">open</span>, setOpen] = useState(<span class="hljs-literal">false</span>);</code></pre><p>On render, pass the <code>open</code> value to the <code>open</code> prop, and an <code>onClose</code> callback
+									that will revert the value of the <code>open</code> state to <code>false</code><br />
+									<br />
+									Pass the content of the drawer as <code>children</code>. Take note that you may also need to
+								pass a button inside the content that should revert the Drawer back to its closed state</p>
+								<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">Drawer</span>
+  <span class="hljs-attr">onClose</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+    setOpen(false);
+  }}
+  open={open}
+&gt;
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+    Content is passed as children<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+    This may also contain a custom UI component or an
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>HTML element<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+      <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+        setOpen(false);
+      }}
+    &gt;
+      Close drawer
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">Drawer</span>&gt;</span></code></pre><p>Finally, add a mechanism to change the value of <code>open</code> state to <code>true</code>
+								to trigger the Drawer to open</p>
+								<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+    setOpen(true);
+  }}
+&gt;
+  Open drawer
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre><p>Clicking on the button labeled <code>Open drawer</code> will open the drawer</p>
+								<a href="#overriding-cssstyles" id="overriding-cssstyles" style="color: inherit; text-decoration: none;">
+									<h3>Overriding CSS/styles</h3>
+								</a>
+								<p>It&#39;s possible to override the styling of the drawer and backdrop.
+									Simply wrap the Drawer component inside a container<br />
+									<br />
+								Using sass/scss:</p>
+								<pre><code>Component:
+
+&lt;div className=<span class="hljs-string">&quot;drawer-container&quot;</span>&gt;
+  &lt;Drawer {<span class="hljs-string">...props</span>}&gt;
+    {children}
+  &lt;<span class="hljs-string">/Drawer</span>&gt;
+&lt;<span class="hljs-string">/div</span>&gt;
+
+Style:
+
+<span class="hljs-string">.drawer-parent</span> {
+  <span class="hljs-string">.drawer-wrapper</span> {
+    <span class="hljs-string">...Your</span> wrapper CSS
+  }
+
+  <span class="hljs-string">.drawer-backdrop</span> {
+    <span class="hljs-string">...Your</span> backdrop CSS
+  }
+
+  <span class="hljs-string">.drawer-container</span> {
+    <span class="hljs-string">...Your</span> drawer container CSS
+  }
+}</code></pre><p>You may alternatively pass a custom className for the backdrop and wrapper:</p>
+								<pre><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Drawer</span>
+  <span class="hljs-attr">backdropClassName</span>=<span class="hljs-string">&quot;custom-backdrop-class&quot;</span>
+  <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;custom-drawer-class&quot;</span>
+  </span></span><span class="hljs-template-variable">{...props}</span><span class="xml"><span class="hljs-tag">
+&gt;</span>
+  </span><span class="hljs-template-variable">{children}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">Drawer</span>&gt;</span></span></code></pre><p>Since you now have a custom class name, you may freely add custom styling:</p>
+								<pre><code>.custom-drawer-<span class="hljs-class"><span class="hljs-keyword">class</span> </span>{
+  ...Your backdrop CSS
+
+  .drawer-<span class="hljs-keyword">container</span> {
+    ...Your drawer <span class="hljs-keyword">container</span> CSS
+  }
+}
+
+.custom-backdrop-<span class="hljs-class"><span class="hljs-keyword">class</span> </span>{
+  ...Your backdrop CSS
+}</code></pre><p>It&#39;s also possible to override styling using styled-components or emotion.
+									You only need to wrap the Drawer inside a styled component with nested CSS
+								definitions as demonstrated above</p>
+								<a href="#setting-the-backdrop-coloropacity-transition-duration-etc" id="setting-the-backdrop-coloropacity-transition-duration-etc" style="color: inherit; text-decoration: none;">
+									<h3>Setting the backdrop color/opacity, transition duration, etc.</h3>
+								</a>
+								<p>Since the backdrop color, transition settings, z-index, and other properties
+									are only defined in CSS, you may easily override these by overriding the styles.
+									Follow the instructions above under <strong>Overriding CSS/styles</strong><br />
+									<br />
+								To change backdrop color:</p>
+								<pre><code><span class="hljs-selector-class">.drawer-backdrop</span> {
+  <span class="hljs-attribute">background-color</span>: red;
+}</code></pre><p>To change backdrop opacity (when open):</p>
+								<pre><code>.drawer-<span class="hljs-class">backdrop </span>{
+  &amp;.drawer-is-<span class="hljs-class">open </span>{
+<span class="hljs-symbol">    opacity:</span> <span class="hljs-number">0.4</span>;
+  }
+}</code></pre><p>To change transition duration (animation speed):</p>
+								<pre><code>.drawer-backdrop,
+.drawer-<span class="hljs-keyword">wrapper</span> {
+  transition-duration: <span class="hljs-number">0.8</span>s;
+}</code></pre><p>Note that when changing transition duration, both backdrop and wrapper must
+								have the same value. Otherwise, it may cause unexpected behaviors</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>props: <a href="../interfaces/drawer.drawerprops.html" class="tsd-signature-type">DrawerProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">HTMLAttributes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactElement</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="drawer.html">Drawer</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="index.html">Index</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="constants.html">constants</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="helpers.html">helpers</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="types.html">types</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/drawer.drawerprops.html" class="tsd-kind-icon">Drawer<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="drawer.html#drawer-1" class="tsd-kind-icon">Drawer</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

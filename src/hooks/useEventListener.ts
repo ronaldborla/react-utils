@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module hooks
+ */
+
 import { useEffect } from 'react';
 
 /**

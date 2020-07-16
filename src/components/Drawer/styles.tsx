@@ -1,3 +1,9 @@
+/**
+ * @packageDocumentation
+ * @module Drawer/styles
+ * @hidden
+ */
+
 import styled from '@emotion/styled';
 import { SCROLL_SUSPENDED_CLASS } from '../../constants';
 
@@ -18,11 +24,12 @@ export const drawerHtmlCss = `
 
 export const Wrapper = styled.div`
   transition-duration: 0.3s;
-  transition-property: opacity, transform;
   transition-timing-function: ease;
+  transition-property: opacity, transform;
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 10;
   opacity: 0;
 
   &.drawer-is-open {
@@ -91,8 +98,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Backdrop = styled.div`
-  transition: 0.3s opacity ease;
+  background-color: #000000;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: opacity;
   position: fixed;
+  z-index: 9;
   top: 0;
   right: 0;
   bottom: 0;

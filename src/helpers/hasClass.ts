@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module helpers
+ */
+
 import getClassList from './getClassList';
 
 /**

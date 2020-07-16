@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module helpers
+ */
+
 import isUndefined from 'lodash/isUndefined';
 import getClassList from './getClassList';
 

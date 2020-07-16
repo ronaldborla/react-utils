@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module Index
+ */
+
 // Constants
 export { SCROLL_SUSPENDED_CLASS } from './constants';
 // Components

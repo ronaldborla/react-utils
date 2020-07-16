@@ -1,4 +1,9 @@
 /**
+ * @packageDocumentation
+ * @module helpers
+ */
+
+/**
  * Get scroll value
  */
 export default function getScrollValue(): number {

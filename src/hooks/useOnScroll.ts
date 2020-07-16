@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module hooks
+ */
+
 import { useEffect } from 'react';
 import getScrollValue from '../helpers/getScrollValue';
 
